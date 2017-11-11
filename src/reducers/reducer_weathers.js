@@ -1,3 +1,8 @@
 export default function (state = null, action) {
-  return 'blah blah';
+  switch(action.type) {
+    case 'CHANGE_WEATHER':
+      return action.payload;
+    default:
+      return 'blah blah';
+  }
 }
